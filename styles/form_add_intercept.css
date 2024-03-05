@@ -1,0 +1,74 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    background-color: #eeeeee;
+    text-decoration: underline; 
+}
+#container {
+    margin: 0 auto;  
+    width: 100%;
+}
+#header {
+    background-color: #5bc0de; 
+    padding: 10px;
+    text-align: center;
+}
+#menu {
+    float: left;
+    width: 100%;
+    background-color: #0c0c0c;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    border-right: 2px solid #FFFFFF;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menu li a:hover {
+    background-color: #5bc0de;
+}
+
+#mainContainer {
+    float: left;
+    width: 100%;
+}
+
+#leftbar {
+    clear: left;
+    float: left; 
+    width: 20%;
+    padding: 20px 0;
+    margin: 0;
+    display: inline;
+    background-color: #5bc0de;
+}
+
+#content {
+    
+    float: left;
+    width: 75%;
+    padding: 10px 0;
+    margin: 0 0 0 5%;
+    display: inline;
+}
+
+#cotype {
+    
+    
+    width: 350px;
+   
+}
+
+#reason, #reason2 {  
+width: 900px; 
+}
+
+#numf1, #numf2, #numf3, #numf4, #numint  {        
+width: 250px;
+   
+}

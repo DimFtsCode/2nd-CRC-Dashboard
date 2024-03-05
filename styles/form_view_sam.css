@@ -1,0 +1,238 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    background-color: #eeeeee;
+    text-decoration: underline;
+}
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+#header {
+    background-color: #5bc0de; 
+    padding: 10px;
+    text-align: center;
+}
+#menu {
+    float: left;
+    width: 100%;
+    background-color: #0c0c0c;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    border-right: 2px solid #FFFFFF;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menu li a:hover {
+    background-color: #5bc0de;
+}
+
+#mainContainer {
+    float: left;
+    width: 100%;
+}
+
+#leftbar {
+    clear: left;
+    float: left; 
+    width: 20%;
+    padding: 20px 0;
+    margin: 0;
+    display: inline;
+    background-color: #5bc0de;
+}
+
+#content {
+    
+    float: left;
+    width: 75%;
+    padding: 10px 0;
+    margin: 0 0 0 5%;
+    display: inline;
+}
+
+#info_order {
+  font-size: 18px;
+  font-weight: bold;      
+}
+
+table {
+   width: 100%; 
+   /* border: 1px solid #b52b27; */   
+}
+
+tr.table_head{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.serial1 { 
+   width: 3%;  
+}
+
+td.samunit { 
+   width: 10%;  
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.status1 { 
+   width: 8%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.remark1 { 
+   width: 20%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.user_reg1 { 
+   width: 6%;  
+   font-size: 14px;
+/*   background-color: cyan;*/
+/*   font-weight: bold;*/
+}
+
+td.date_reg1 { 
+   width: 10%;  
+   font-size: 10px;
+/*   font-weight: bold;*/
+}
+
+
+
+td.serial2 { 
+   width: 3%;  
+}
+
+td.system { 
+   width: 15%;  
+   font-size: 18px;
+/*   background-color: red;*/
+/*   font-weight: bold;*/
+}
+
+td.remark2 { 
+   width: 15%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.rs1 { 
+   width: 5%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs4 { 
+   width: 5%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+
+td.rs4a { 
+   width: 6%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs5 { 
+   width: 5%;  
+   font-size: 14px;
+/*   background-color: red;*/
+/*   font-weight: bold;*/
+}
+
+td.rs5a { 
+   width: 6%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs5b { 
+   width: 6%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs6 { 
+   width: 5%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs11 { 
+   width: 5%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.rs12 { 
+   width: 5%;  
+   font-size: 14px;
+/*   font-weight: bold;*/
+}
+
+td.user_reg2 { 
+   width: 6%;  
+   font-size: 14px;
+/*   background-color: red;*/
+/*   font-weight: bold;*/
+}
+
+td.date_reg2 { 
+   width: 10%;  
+   font-size: 10px;
+/*   font-weight: bold;*/
+}
+
+
+td.serial3 { 
+   width: 3%;  
+}
+
+td.weapon3 { 
+   width: 10%;  
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.samunit3 { 
+   width: 12%;  
+   font-size: 16px;
+   font-weight: bold;
+}
+
+td.status3 { 
+   width: 8%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.remark3 { 
+   width: 20%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.user_reg3 { 
+   width: 6%;  
+   font-size: 14px;
+/*   background-color: red;*/
+/*   font-weight: bold;*/
+}
+
+td.date_reg3 { 
+   width: 10%;  
+   font-size: 10px;
+/*   font-weight: bold;*/
+}

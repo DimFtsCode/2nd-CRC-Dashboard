@@ -1,0 +1,40 @@
+body{
+    font-family: arial,helvetica,sans-serif;
+    background-color: silver;
+    text-decoration: underline;
+}
+
+#page-wrapper {
+    font-family: arial,helvetica,sans-serif;
+    background-color: silver;
+    text-decoration: underline;
+}
+
+table {
+    width: 70%;
+   /* border: 1px solid #b52b27; */   
+}
+
+th.code, th.Name, th.custom, th.sideR {
+    width: 25%;
+    text-align: center;
+    border: solid 1px red; 
+}
+
+td.code, td.Name, td.custom, td.sideR {
+   border-left: solid 1px red;
+   border-right:  solid 1px red;   
+}
+
+td.Last {
+    border-left: solid 1px red;
+    border-right:  solid 1px red; 
+    border-bottom: solid 1px red;
+}
+
+tr{
+    font-style: italic;
+    font-size: 15pt;
+    color: black;    
+}    
+

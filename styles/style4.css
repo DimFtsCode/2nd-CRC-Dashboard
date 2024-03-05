@@ -1,0 +1,15 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+}
+
+#container {
+    margin: 0 30px;
+    /* width: 600px; */
+    background: #FFFFFF;
+}
+
+#content{
+    clear: left;
+    padding: 20px;
+}
+

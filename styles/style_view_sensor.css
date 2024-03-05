@@ -1,0 +1,21 @@
+
+table {
+   /* width: 100%; */
+   /* border: 1px solid #b52b27; */   
+}
+
+tr.table_head{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.sensor_id { 
+   width: 5%;  
+}
+
+td.sensor_name { 
+   width: 10%;  
+   font-size: 18px;
+   font-weight: bold;
+}
+

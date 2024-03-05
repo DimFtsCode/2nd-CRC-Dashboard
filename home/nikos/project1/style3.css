@@ -1,0 +1,17 @@
+body{
+    background-color: #f8f8f8;
+    background-image: url("./images/ga1.jpg");
+    background-repeat: repeat;
+   
+}
+
+tr{
+    font-style: italic;
+    font-size: 20pt;
+    color: yellow;      
+}
+
+p{
+    font-weight: bold;
+    color: greenyellow; 
+}

@@ -1,0 +1,5 @@
+AuthUserFile /home/nikos/1ake/private/me_private/.htpasswd
+AuthType Basic
+AuthName "My Files"
+Require valid-user
+

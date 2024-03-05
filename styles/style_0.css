@@ -1,0 +1,96 @@
+body{
+    background-color: #eeeeee;
+    background-image: url("../images/2ake_emb5.gif");
+    -webkit-background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 150px;     
+}
+body h1 {
+    font-size: 20pt;
+    text-align: center;    
+}
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+#header {
+    background-color: #5bc0de;
+    padding: 10px;
+}
+#header1 {
+    background-color: #29444c;
+    padding: 10px;
+}
+#menu {
+    float: left;
+    width: 100%;
+    background-color: #0c0c0c;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    border-right: 2px solid #FFFFFF;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menu li a:hover {
+    background-color: #CCCCCC;
+}
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+table {
+    width: 100%;
+   /* border: 1px solid #b52b27; */   
+}
+
+th.code, th.Name {
+    width: 10%;
+    text-align: left;
+    border: solid 1px red;
+}
+
+th.custom {
+    width: 50%;
+}
+
+th.sideR {
+    width: 10%;
+    text-align: left;
+    border: solid 1px red;
+}
+
+td.code, td.Name, td.sideR, td.Last {
+   border-left: solid 1px red;
+   border-right:  solid 1px red;   
+}
+
+td.Last {
+    border-bottom: solid 1px red;
+}
+
+tr{
+    font-style: italic;
+    font-size: 20pt;
+    color: black;        
+}
+
+p{
+    font-weight: bold;
+    color: red; 
+}
+

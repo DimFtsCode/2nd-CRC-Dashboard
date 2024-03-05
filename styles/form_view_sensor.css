@@ -1,0 +1,125 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    background-color: #eeeeee;
+    text-decoration: underline;
+}
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+#header {
+    background-color: #5bc0de;
+    padding: 10px;
+    text-align: center;
+}
+#menu {
+    float: left;
+    width: 100%;
+    background-color: #0c0c0c;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    border-right: 2px solid #FFFFFF;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menu li a:hover {
+    background-color: #5bc0de;
+}
+
+#mainContainer {
+    float: left;
+    width: 100%;
+}
+
+#leftbar {
+    clear: left;
+    float: left; 
+    width: 20%;
+    padding: 20px 0;
+    margin: 0;
+    display: inline;
+    background-color: #5bc0de;
+}
+
+#content {
+    
+    float: left;
+    width: 75%;
+    padding: 10px 0;
+    margin: 0 0 0 5%;
+    display: inline;
+}
+
+
+table {
+   width: 100%; 
+   /* border: 1px solid #b52b27; */   
+}
+
+tr.table_head{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.serial { 
+   width: 4%;  
+}
+
+td.sensor_id { 
+   width: 4%;  
+}
+
+td.sensor_name { 
+   width: 12%;  
+   font-size: 18px;
+   font-weight: bold;
+}
+
+td.sensor_type { 
+   width: 5%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.status { 
+   width: 7%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.reason { 
+   width: 15%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.action { 
+   width: 15%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.tbc { 
+   width: 10%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.user_reg { 
+   width: 9%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}
+
+td.date_reg { 
+   width: 15%;  
+   font-size: 18px;
+/*   font-weight: bold;*/
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> A Basic Form </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> A Basic Form </h1>
+        <hr> 
+        <form action="#">
+        <fieldset> 
+            <legend>  Form Information </legend>
+            <div>
+                <label for="username"> Name: </label>
+                <input id="username" type="test" namme="username" size="20" maxlength="30" value="Username Here">
+            </div>
+            <div> 
+                <label for="email"> E-mail Address : </label>
+                <input id="email" type="text" name="email">                            
+            </div>
+            <div>
+                <label for="state"> State:</label>
+                <select id="state" name="state">                    
+                    <option value="CA">California</option>
+                    <option selected="selected" value="WI">Wisconsin</option>                    
+                </select>
+            </div>
+            <div> 
+                <p>
+                
+                </p>
+            </div>
+            <div> Toppings: <br />
+                <input type="checkbox" id="sausage"
+                       name="toppings" value="sausage">
+                <label for="sausage">Sausage</label><br />
+                <input type="checkbox" id="pep"
+                       name="toppings" value="pep">
+                <label for="pep">Pepperoni</label><br />
+                <input type="checkbox" id="mush"
+                       name="toppings" value="mush">
+                <label for="mush">Mushrooms</label><br />                                            
+            </div>
+             <div> 
+                <p>
+                
+                </p>
+            </div>
+            <div> Crust: <br  />
+                <input type="radio" id="deep"
+                name="crust" value="deep">
+                <label for="deep">Deep Dish</label><br />
+                <input type="radio" id="thin"
+                name="crust" value="thin">
+                <label for="thin">Thin</label><br />
+            </div>
+            <div> 
+                <p>
+                
+                </p>
+            </div>
+            <div> 
+                <input type="submit" name="submit" value="Submit Data">                              
+            </div>
+            <div> 
+                <input type="reset" name="reset" value="Clear Data">                              
+            </div>
+        </fieldset>
+        </form>
+    </body>
+</html>
