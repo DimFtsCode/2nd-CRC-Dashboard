@@ -2,24 +2,27 @@
 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
+html, body {
+    height: 100%;
+}
 /* Προσαρμογή του header */
 .header-content {
-    padding-top: 0.5rem; 
-    padding-bottom: 0.5rem; 
+    padding-top: 0.100rem; 
+    padding-bottom: 0.100rem; 
     position: relative;
     border-bottom:3px solid #0c0b0b; 
 
 }
 
 .header-content h1 {
-    margin-top: 0.5rem; 
-    margin-bottom: 0.25rem; 
+    margin-top: 0.100rem; 
+    margin-bottom: 0.100rem; 
     font-size: 30px;
 }
 
 .header-content p {
-    margin-top: 0.25rem; 
-    margin-bottom: 0.5rem;
+    margin-top: 0.100rem; 
+    margin-bottom: 0.100rem;
     font-size: 17px; 
 }
 
@@ -56,17 +59,17 @@ overflow:visible;
 } */
 
 .main-menu {
-background:#b3b4c1;
-border:3px solid #0c0b0b;
-position:static;
-border-radius: 10px;
-height:500px;
-left:0;
-overflow:hidden;
--webkit-transition:width .05s linear;
-transition:width .05s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
+    background: #1c4b82; 
+    border-right:3px solid #0c0b0b;
+    position:static;
+
+    left:0;
+    height: 100%;
+    overflow:hidden;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
 }
 
 .main-menu>ul {
@@ -157,7 +160,19 @@ height: 100%;
 }
 
 .footer-content {
-    border-top:1px solid #007bff; 
+    height: 60px;
+    line-height: 60px; /* Αυτό κεντραρίζει κάθετα το κείμενο μέσα στο footer */
+    border-top: 3px solid #000000;
+    text-align: center;
 }
+
+
+.background-image-wrapper {
+    background-image: url('/images/greece.webp'); /* Αλλάξτε το με την πραγματική διαδρομή της εικόνας σας */
+    background-size: cover; /* ή use '100% 100%' για ακριβή ταιριάξιμο */
+    background-position: center; /* Κεντραρίζει την εικόνα στην 'div' */
+    background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται η εικόνα */
+}
+
 
 

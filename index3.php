@@ -7,9 +7,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid d-flex flex-column min-vh-90">
+        <div class="container-fluid d-flex flex-column min-vh-100">
             <div class="row">
-                <div class="col-12 bg-primary text-black text-center py-3 header-content position-relative">
+                <div class="col-12 text-black text-center py-3 header-content position-relative" style="background: #dae1e7;">
                     <div class="header-image">
                         <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
                     </div>
@@ -19,9 +19,9 @@
                     </div>
                  </div>
             </div>
-    
-            <div class="row">
-                <div class="col-2  py-3 px-0">
+            <div class="row flex-grow-1" >
+                <div class="col-2 px-0">
+                <!-- side bar -->
                     <div  class="main-menu">
                         <ul>
                             <li>
@@ -146,61 +146,70 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-10 py-3 ">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-5" style="background: rgba(28, 75, 130, 0.7); border-radius: 10px;">
-                                <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                                        </div>
-                                        
-                                        <div class="carousel-item">
-                                            <img src="/images/snow-img1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/images/snow-img2.jpeg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                                        </div>
-                                    </div>
-                                    <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
-                                        <!-- Το κείμενο θα ενημερώνεται από το JavaScript -->
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                    </div>   
-                                </div>
+                <div class="background-image-wrapper col-10">
+                <div class="row">
+                <div class="col-6 " style="background: rgba(255, 255, 255, 0.25);">
+                <!-- carouzel -->
+                    <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
                             </div>
-                            <div class="col-5" style="background: rgba(28, 75, 130, 0.7); border-radius: 10px;">
-                                <div class="content-container py-3" style="height: 300px; overflow-y: auto; text-align: center; margin-top: 1rem;">
-                                    <!-- Προσθέστε εδώ το νέο περιεχόμενο -->
-                                    <h3>Νέος Τίτλος</h3>
-                                    <p>Εδώ μπορείτε να προσθέσετε το περιεχόμενο που επιθυμείτε, διατηρώντας το ίδιο στυλ με τον carousel.</p>
-                                </div>
+                            
+                            <div class="carousel-item">
+                                <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
                             </div>
                         </div>
+                        <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
+                            <!-- Το κείμενο θα ενημερώνεται από το JavaScript -->
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-auto">
-                <div class="col-12 bg-dark text-white text-center py-3 footer-content">
-                    <!-- <div class="footer-content"> -->
-                        <p >Copyright (c) 2017 znk</p>
-                    <!-- </div> -->
+                <div class="col-2 ">
+                </div>
+                <div class="col-4" style="background: rgba(255, 255, 255, 0.25);">
+                <!-- info menu -->
+                    <div class="content-container py-3" style=" overflow-y: auto; text-align: center; margin-top: 1rem;">
+                        <!-- Προσθέστε εδώ το νέο περιεχόμενο -->
+                        <h3>Νέος Τίτλος</h3>
+                        <p>Εδώ μπορείτε να προσθέσετε το περιεχόμενο που επιθυμείτε, διατηρώντας το ίδιο στυλ με τον carousel.</p>
+                    </div>
+                </div>
+                </div>
                 </div>
             </div>
-        </div> <!-- end container -->
+            <div class="row ">
+                <div class="col-4 text-center footer-content" style="background: #dae1e7;">
+                    <p><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #0000EE; text-decoration: none;">2ake@haf.gr</a></p>
+                </div>
+                <div class="col-4  text-center  footer-content" style="background: #dae1e7;"> 
+                        <p><strong>Copyright (c) 2017 znk</strong></p>
+                </div>
+                <div class="col-4  text-center  footer-content" style="background: #dae1e7;"> 
+                        <p ><strong>Τηλέφωνο Επικοινωνίας:</strong> 210-2425001</p>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -209,7 +218,9 @@
                 var carouselTexts = [
                     { title: "Γενικά", description: "Το 2ο ΑΚΕ βρίσκεται στην κορυφή του όρους Πάρνηθα, σε υψόμετρο 1413 μέτρα" },
                     { title: "Ιστορικά Στοιχεία", description: "Η Μονάδα λειτουργεί και επιχειρεί από το 1958, αρχικά ως 3η ΜΚΣΕ, στη συνέχεια ως 2ο ΚΕΠ και από 2019 ως 2ο ΑΚΕ" },
-                    { title: "Αποστολή", description: "Αποστολή του 2ου ΑΚΕ είναι η επιτυχής εκτέλεση των λειτουργιών ενεργού Αεράμυνας εντός της περιοχής ευθύνης του, για την ακύρωση ή τη μείωση της αποτελεσματικότητας της εχθρικής από αέρος δράσης, σε Εθνικό και Συμμαχικό επίπεδο." }
+                    { title: "Αποστολή", description: "Αποστολή του 2ου ΑΚΕ είναι η επιτυχής εκτέλεση των λειτουργιών ενεργού Αεράμυνας εντός της περιοχής ευθύνης του, για την ακύρωση ή τη μείωση της αποτελεσματικότητας της εχθρικής από αέρος δράσης, σε Εθνικό και Συμμαχικό επίπεδο." },
+                    { title: "Επίσκεψη Υπουργού", description: "Επίσκεψη Υπουργού στο 2ο ΑΚΕ συνοδεία του Αρχηγού ΓΕΑ." }
+
                 ];
                 // Ορίστε το αρχικό κείμενο με την πρώτη είσοδο του πίνακα
                 $("#carousel-text").html(
@@ -225,6 +236,5 @@
                 });
             });
         </script>
-
     </body>
 </html>
