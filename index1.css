@@ -10,7 +10,7 @@ html, body {
     padding-top: 0.100rem; 
     padding-bottom: 0.100rem; 
     position: relative;
-    border-bottom:3px solid #0c0b0b; 
+    border-bottom:3px solid #dd6b4d; 
 
 }
 
@@ -35,7 +35,7 @@ html, body {
 }
 
 .header-text {
-    /* Κρατά το κείμενο κεντραρισμένο στο κέντρο */
+    color: #dae1e7;
 }
 
 
@@ -59,12 +59,10 @@ overflow:visible;
 } */
 
 .main-menu {
-    background: #1c4b82; 
-    border-right:3px solid #0c0b0b;
+    background: #dae1e7; 
     position:static;
-
-    left:0;
-    height: 100%;
+    
+    height: 100%; 
     overflow:hidden;
     -webkit-transition:width .05s linear;
     transition:width .05s linear;
@@ -87,7 +85,7 @@ position:relative;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
-color:#0f0909;
+color:#183661;
 font-family: 'Roboto', sans-serif; /* Αλλαγή εδώ */
 font-size: 14px;
 text-decoration:none;
@@ -149,8 +147,7 @@ margin:0;
 padding:0;
 } */
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
-background-color:#000000;
+color:#dd6b4d;
 }
 .area {
 float: left;
@@ -162,17 +159,19 @@ height: 100%;
 .footer-content {
     height: 60px;
     line-height: 60px; /* Αυτό κεντραρίζει κάθετα το κείμενο μέσα στο footer */
-    border-top: 3px solid #000000;
+    border-top: 3px solid #dd6b4d;
     text-align: center;
 }
 
 
 .background-image-wrapper {
     background-image: url('/images/greece.webp'); /* Αλλάξτε το με την πραγματική διαδρομή της εικόνας σας */
-    background-size: cover; /* ή use '100% 100%' για ακριβή ταιριάξιμο */
+    background-size: 100%; /* ή use '100% 100%' για ακριβή ταιριάξιμο */
     background-position: center; /* Κεντραρίζει την εικόνα στην 'div' */
     background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται η εικόνα */
 }
 
 
-
+.nav-link:hover {
+    color: #dd6b4d !important;
+}

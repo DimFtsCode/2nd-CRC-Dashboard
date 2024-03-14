@@ -7,9 +7,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid d-flex flex-column min-vh-100">
+        <div class="container-fluid d-flex flex-column min-vh-100 " >
             <div class="row">
-                <div class="col-12 text-black text-center py-3 header-content position-relative" style="background: #dae1e7;">
+                <div class="col-12 text-black text-center py-3 header-content position-relative" style="background: #1c4b82;">
                     <div class="header-image">
                         <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
                     </div>
@@ -20,15 +20,15 @@
                  </div>
             </div>
             <div class="row flex-grow-1" >
-                <div class="col-2 px-0">
+                <div class="col-2 px-0 ">
                 <!-- side bar -->
-                    <div  class="main-menu">
+                    <div  class="main-menu" >
                         <ul>
                             <li>
                                 <a href="./index.php">
                                     <i class="fa fa-home fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
-                                    Home
+                                        ΑΡΧΙΚΗ
                                     </span>
                                 </a>
                             
@@ -72,7 +72,7 @@
                                 <a href="./pages/dyp_init0.php">
                                     <i class="fa fa-folder-open fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
-                                    ΔΥΠ
+                                        ΔΥΠ
                                     </span>
                                 </a>
                             </li>
@@ -128,7 +128,7 @@
                                 <a href="./pages/Unit_Status0.php">
                                 <i class="fa fa-info fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
-                                        SITE STATUS
+                                        ΚΑΤΑΣΤΑΣΗ ΣΕΛΙΔΑΣ
                                     </span>
                                 </a>
                             </li>
@@ -139,7 +139,7 @@
                             <a href="./pages/login.php">
                                     <i class="fa fa-sign-in fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
-                                        Log In
+                                        ΕΙΣΟΔΟΣ
                                     </span>
                                 </a>
                             </li>  
@@ -147,66 +147,60 @@
                     </div>
                 </div>
                 <div class="background-image-wrapper col-10">
-                <div class="row">
-                <div class="col-6 " style="background: rgba(255, 255, 255, 0.25);">
-                <!-- carouzel -->
-                    <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8 " style="background: rgba(255, 255, 255, 0.50);">
+                        <!-- carouzel -->
+                            <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                    </div>
+                                </div>
+                                <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
+                                    <!-- Το κείμενο θα ενημερώνεται από το JavaScript -->
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
-                        <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
-                            <!-- Το κείμενο θα ενημερώνεται από το JavaScript -->
+                        <div class="col-1">
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        
                     </div>
-                </div>
-                <div class="col-2 ">
-                </div>
-                <div class="col-4" style="background: rgba(255, 255, 255, 0.25);">
-                <!-- info menu -->
-                    <div class="content-container py-3" style=" overflow-y: auto; text-align: center; margin-top: 1rem;">
-                        <!-- Προσθέστε εδώ το νέο περιεχόμενο -->
-                        <h3>Νέος Τίτλος</h3>
-                        <p>Εδώ μπορείτε να προσθέσετε το περιεχόμενο που επιθυμείτε, διατηρώντας το ίδιο στυλ με τον carousel.</p>
-                    </div>
-                </div>
-                </div>
                 </div>
             </div>
             <div class="row ">
-                <div class="col-4 text-center footer-content" style="background: #dae1e7;">
-                    <p><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #0000EE; text-decoration: none;">2ake@haf.gr</a></p>
+                <div class="col-4 text-center footer-content" style="background: #1c4b82;">
+                    <p style="color: #dae1e7"><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #0000EE; text-decoration: none;">2ake@haf.gr</a></p>
                 </div>
-                <div class="col-4  text-center  footer-content" style="background: #dae1e7;"> 
-                        <p><strong>Copyright (c) 2017 znk</strong></p>
+                <div class="col-4  text-center  footer-content" style="background: #1c4b82;"> 
+                    <p style="color: #dae1e7"><strong>Copyright (c) 2017 znk</strong></p>
                 </div>
-                <div class="col-4  text-center  footer-content" style="background: #dae1e7;"> 
-                        <p ><strong>Τηλέφωνο Επικοινωνίας:</strong> 210-2425001</p>
+                <div class="col-4  text-center  footer-content" style="background: #1c4b82;"> 
+                    <p style="color: #dae1e7"><strong>Τηλέφωνο Επικοινωνίας:</strong> 210-2425001</p>
                 </div>
             </div>
         </div>
