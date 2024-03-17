@@ -130,6 +130,12 @@ bottom:0;
     color: #dd6b4d; /* ή οποιοδήποτε χρώμα προτιμάτε */
 }
 
+.main-menu li.active > a > .nav-text {
+    text-decoration: underline; /* Υπογραμμίζει το κείμενο */
+    /* Προσθέστε εδώ οποιεσδήποτε άλλες CSS ιδιότητες θέλετε να εφαρμόσετε στο span */
+}
+
+
 .no-touch .scrollable.hover {
 overflow-y:hidden;
 }

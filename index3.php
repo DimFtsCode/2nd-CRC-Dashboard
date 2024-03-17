@@ -34,7 +34,7 @@
                             <li class="active">
                                 <a href="./index.php">
                                     <i class="fa fa-home fa-2x"></i>
-                                    <span class="nav-text" style="font-weight: bold;">
+                                    <span class="nav-text active" style="font-weight: bold;">
                                         ΑΡΧΙΚΗ
                                     </span>
                                 </a>
