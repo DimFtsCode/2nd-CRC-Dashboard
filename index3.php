@@ -11,7 +11,9 @@
             <div class="row">
                 <div class="col-2 header-content" >
                     <div class="header-image">
-                            <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
+                        <a href="./index3.php" >
+                            <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto; cursor: pointer;">
+                        </a>
                     </div>    
                 </div>
                 <div class="col-8 text-black text-center py-3 header-content position-relative" >
@@ -22,7 +24,9 @@
                 </div>
                 <div class="col-2 header-content" >
                     <div class="header-image">
-                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
+                        <a  href="./pages/dee_init0.php">
+                            <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto; cursor: pointer;">
+                        </a>                    
                     </div>
                 </div>
             </div>
@@ -154,8 +158,8 @@
                         <div class="col-1"></div>
                         <div class="col-9 " style="background: rgba(255, 255, 255, 0.60); margin-top: 2%; border-radius:5%;">
                         <!-- carouzel -->
-                            <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
-                                <ol class="carousel-indicators">
+                            <div id="carouselExampleIndicators" class="carousel slide py-3"  data-ride="carousel">
+                                <ol class="carousel-indicators" style="bottom: -50px; ">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -163,20 +167,20 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                        <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
                                     </div>
                                     
                                     <div class="carousel-item">
-                                        <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                        <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                        <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
                                     </div>
                                 </div>
-                                <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
+                                <div id="carousel-text" style="height: 80px; overflow-y: auto; text-align: center; margin-top: 1rem;">
                                     <!-- Το κείμενο θα ενημερώνεται από το JavaScript -->
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -187,24 +191,34 @@
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>
-                            </div>
+                             </div>
                         </div>
                         <div class="col-1">
                         </div>
                         <div class="col-1 shadow mb-6 p-3  " style="background: #1c4b82; border-radius:15%; margin-top:1.25%;  border:2px solid #dd6b4d;">
                             <div class="row">
-                                <div class="col-12 text-center" style="margin-top: 1rem; color: #dae1e7; ">
-                                    <p><strong>MIS/Links</strong></p>
-                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
-                                    <p>ΙΡΙΔΑ</p>
-                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
-                                    <p>ΓΕΑ</p>
-                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
-                                    <p>ΑΤΑ</p>
-                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
-                                    <p>ΔΑΕ</p>
-                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
-                                    <p>ΔΑΥ</p>
+                                <div class="col-12 text-center links-sect" style="margin-top: 1rem; color: #dae1e7; ">
+                                    <p ><strong>MIS/Links</strong></p>
+                                    <a href="https://www.haf.gr/" target="_blank">
+                                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                        <p style="color: #dae1e7; ">ΙΡΙΔΑ</p>
+                                    </a>
+                                    <a href="https://www.haf.gr/" target="_blank">
+                                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                        <p style="color: #dae1e7; ">ΓΕΑ</p>
+                                    </a>
+                                    <a href="https://www.haf.gr/" target="_blank">
+                                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                        <p style="color: #dae1e7; ">ΑΤΑ</p>
+                                    </a>
+                                    <a href="https://www.haf.gr/" target="_blank">
+                                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                        <p style="color: #dae1e7; ">ΔΑΕ</p>
+                                    </a>
+                                    <a href="https://www.haf.gr/" target="_blank">
+                                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                        <p style="color: #dae1e7; ">ΔΑΥ</p>
+                                    </a>    
                                 </div>
                             </div>
                         </div>
@@ -213,7 +227,7 @@
             </div>
             <div class="row " style="background: #1c4b82;">
                 <div class="col-4 text-center footer-content" >
-                    <p style="color: #dae1e7"><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #0000EE; text-decoration: none;">2ake@haf.gr</a></p>
+                    <p style="color: #dae1e7"><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #dd6b4d; font-weight: bold; text-decoration: none;">2ake@haf.gr</a></p>
                 </div>
                 <div class="col-4  text-center  footer-content" > 
                     <p style="color: #dae1e7"><strong>Copyright (c) 2017 znk</strong></p>
