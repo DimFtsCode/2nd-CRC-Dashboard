@@ -7,24 +7,31 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid d-flex flex-column min-vh-100 " >
+        <div class="container-fluid d-flex flex-column min-vh-100 " style="background: #1c4b82;">
             <div class="row">
-                <div class="col-12 text-black text-center py-3 header-content position-relative" style="background: #1c4b82;">
+                <div class="col-2 header-content" >
                     <div class="header-image">
-                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
-                    </div>
+                            <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
+                    </div>    
+                </div>
+                <div class="col-8 text-black text-center py-3 header-content position-relative" >
                     <div class="header-text">
                         <h1 style="font-weight: bold;">2ο ΑΚΕ</h1>
                         <p style="font-weight: bold;">ΑΕΡΟΠΟΡΙΚΟΣ ΕΛΕΓΧΟΣ ΜΕΣΩΝ ΑΕΡΑΜΥΝΑΣ – ΚΕΝΤΡΟ ΣΥΝΘΕΣΗΣ & ΠΑΡΑΓΩΓΗΣ ΑΕΡΟΠΟΡΙΚΗΣ ΕΙΚΟΝΑΣ</p>
                     </div>
-                 </div>
+                </div>
+                <div class="col-2 header-content" >
+                    <div class="header-image">
+                        <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto;">
+                    </div>
+                </div>
             </div>
             <div class="row flex-grow-1" >
                 <div class="col-2 px-0 ">
                 <!-- side bar -->
                     <div  class="main-menu" >
                         <ul>
-                            <li>
+                            <li class="active">
                                 <a href="./index.php">
                                     <i class="fa fa-home fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
@@ -39,8 +46,7 @@
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΔΚΤΗΣ
                                     </span>
-                                </a>
-                                
+                                </a> 
                             </li>
                             <li class="has-subnav">
                                 <a href="./pages/ydktis_init0.php">
@@ -49,7 +55,6 @@
                                         ΥΔΚΤΗΣ
                                     </span>
                                 </a>
-                                
                             </li>
                             <li class="has-subnav">
                                 <a href="./pages/epit_init0.php">
@@ -58,7 +63,6 @@
                                         ΕΠΙΤΕΛΕΙΟ
                                     </span>
                                 </a>
-                            
                             </li>
                             <li>
                                 <a href="./pages/dee_init0.php">
@@ -133,10 +137,9 @@
                                 </a>
                             </li>
                         </ul>
-
                         <ul class="logout">
                             <li>
-                            <a href="./pages/login.php">
+                                <a href="./pages/login.php">
                                     <i class="fa fa-sign-in fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΕΙΣΟΔΟΣ
@@ -148,8 +151,8 @@
                 </div>
                 <div class="background-image-wrapper col-10">
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8 " style="background: rgba(255, 255, 255, 0.50);">
+                        <div class="col-1"></div>
+                        <div class="col-9 " style="background: rgba(255, 255, 255, 0.60); margin-top: 2%; border-radius:5%;">
                         <!-- carouzel -->
                             <div id="carouselExampleIndicators" class="carousel slide py-3" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -188,23 +191,40 @@
                         </div>
                         <div class="col-1">
                         </div>
-                        
+                        <div class="col-1 shadow mb-6 p-3  " style="background: #1c4b82; border-radius:15%; margin-top:1.25%;  border:2px solid #dd6b4d;">
+                            <div class="row">
+                                <div class="col-12 text-center" style="margin-top: 1rem; color: #dae1e7; ">
+                                    <p><strong>MIS/Links</strong></p>
+                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                    <p>ΙΡΙΔΑ</p>
+                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                    <p>ΓΕΑ</p>
+                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                    <p>ΑΤΑ</p>
+                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                    <p>ΔΑΕ</p>
+                                    <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 40px; height: auto;">
+                                    <p>ΔΑΥ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-4 text-center footer-content" style="background: #1c4b82;">
+            <div class="row " style="background: #1c4b82;">
+                <div class="col-4 text-center footer-content" >
                     <p style="color: #dae1e7"><strong>E-mail:</strong> <a href="mailto:2ake@haf.gr" style="color: #0000EE; text-decoration: none;">2ake@haf.gr</a></p>
                 </div>
-                <div class="col-4  text-center  footer-content" style="background: #1c4b82;"> 
+                <div class="col-4  text-center  footer-content" > 
                     <p style="color: #dae1e7"><strong>Copyright (c) 2017 znk</strong></p>
                 </div>
-                <div class="col-4  text-center  footer-content" style="background: #1c4b82;"> 
+                <div class="col-4  text-center  footer-content" > 
                     <p style="color: #dae1e7"><strong>Τηλέφωνο Επικοινωνίας:</strong> 210-2425001</p>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
@@ -230,5 +250,11 @@
                 });
             });
         </script>
+        <script>
+            $(document).ready(function(){
+                $('.dropdown-toggle').dropdown();
+            });
+        </script>
+
     </body>
 </html>

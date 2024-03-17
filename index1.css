@@ -28,10 +28,16 @@ html, body {
 
 
 .header-image {
-    position: absolute; /* Absolute positioning για την εικόνα */
-    left: 90px; /* Ρυθμίστε τις αποστάσεις από την αριστερή πλευρά */
-    top: 50%; /* Κεντράρει την εικόνα κατακόρυφα */
-    transform: translateY(-50%); /* Διορθώνει το κέντρο για κατακόρυφη κέντρωση */
+    position: absolute; 
+    left: 30%; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.header-image1 {
+    position: absolute; 
+    right: 20%; 
+    top: 50%; 
+    transform: translateY(-50%);
 }
 
 .header-text {
@@ -120,6 +126,10 @@ left:0;
 bottom:0;
 }
 
+.main-menu li.active>a {
+    color: #dd6b4d; /* ή οποιοδήποτε χρώμα προτιμάτε */
+}
+
 .no-touch .scrollable.hover {
 overflow-y:hidden;
 }
@@ -171,7 +181,7 @@ height: 100%;
     background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται η εικόνα */
 }
 
-
-.nav-link:hover {
-    color: #dd6b4d !important;
+.nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
 }
