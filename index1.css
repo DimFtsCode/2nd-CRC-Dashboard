@@ -1,6 +1,5 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); */
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
 html, body {
     height: 100%;
@@ -52,7 +51,7 @@ html, body {
 position: relative;
 display: table-cell;
 width: 60px;
-height: 30px;
+height: 35px;
 text-align: center;
 vertical-align: middle;
 font-size:20px;

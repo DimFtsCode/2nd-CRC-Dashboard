@@ -3,8 +3,9 @@
         <title> 2o Αεροπορικό Κέντρο Ελέγχου </title>
         <link rel="stylesheet" type="text/css" href="index1.css">
         <meta charset="UTF-8">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="container-fluid d-flex flex-column min-vh-100 " style="background: #1c4b82;">
@@ -24,7 +25,7 @@
                 </div>
                 <div class="col-2 header-content" >
                     <div class="header-image">
-                        <a  href="./pages/dee_init0.php">
+                        <a  href="./pages1/dee_init0.php">
                             <img src="/images/2ake_emb5.gif" alt="Logo" style="width: 80px; height: auto; cursor: pointer;">
                         </a>                    
                     </div>
@@ -35,17 +36,17 @@
                 <!-- side bar -->
                     <div  class="main-menu" >
                         <ul>
-                            <li class="active">
-                                <a href="./index.php">
-                                    <i class="fa fa-home fa-2x"></i>
-                                    <span class="nav-text active" style="font-weight: bold;">
+                            <li class="has-subnav">
+                                <a href="./index3.php">
+                                    <i class="fa fa-home fa-2x fa-spin"></i>
+                                    <span class="nav-text" style="font-weight: bold;">
                                         ΑΡΧΙΚΗ
                                     </span>
                                 </a>
                             
                             </li>
                             <li class="has-subnav">
-                                <a href="./pages/dktis_init0.php">
+                                <a href="./pages1/dktis_init0.php">
                                     <i class="fa fa-star fa-2x "></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΔΚΤΗΣ
@@ -53,7 +54,7 @@
                                 </a> 
                             </li>
                             <li class="has-subnav">
-                                <a href="./pages/ydktis_init0.php">
+                                <a href="./pages1/ydktis_init0.php">
                                 <i class="fa fa-star-half-full fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΥΔΚΤΗΣ
@@ -61,7 +62,7 @@
                                 </a>
                             </li>
                             <li class="has-subnav">
-                                <a href="./pages/epit_init0.php">
+                                <a href="./pages1/epit_init0.php">
                                 <i class="fa fa-comments fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΕΠΙΤΕΛΕΙΟ
@@ -69,7 +70,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/dee_init0.php">
+                                <a href="./pages1/dee_init0.php">
                                     <i class="fa fa-fighter-jet fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΔΕΕ
@@ -77,7 +78,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/dyp_init0.php">
+                                <a href="./pages1/dyp_init0.php">
                                     <i class="fa fa-folder-open fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΔΥΠ
@@ -85,7 +86,7 @@
                                 </a>
                             </li>
                             <li>
-                            <a href="./pages/me_init0.php">
+                            <a href="./pages1/me_init0.php">
                                 <i class="fa fa-headphones fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         Μ. ΕΠΙΧΕΙΡΗΣΕΩΝ
@@ -93,7 +94,7 @@
                                 </a>
                             </li>
                             <li>
-                            <a href="./pages/myp_init0.php">
+                            <a href="./pages1/myp_init0.php">
                                     <i class="fa fa-cogs fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         Μ. ΥΠΟΣΤΗΡΙΞΗΣ
@@ -101,7 +102,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/saf_init0.php">
+                                <a href="./pages1/saf_init0.php">
                                 <i class="fa fa-shield fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΣΑΦ
@@ -109,7 +110,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/sef_init0.php">
+                                <a href="./pages1/sef_init0.php">
                                 <i class="fa fa-archive fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΣΕΦ
@@ -117,7 +118,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/seep_init0.php">
+                                <a href="./pages1/seep_init0.php">
                                 <i class="fa fa-minus fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΣΕΕΠ
@@ -125,7 +126,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/ake_init0.php">
+                                <a href="./pages1/ake_init0.php">
                                 <i class="fa fa-group fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΕΝΗΜΕΡΩΣΗ ΠΡΣ
@@ -133,7 +134,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./pages/Unit_Status0.php">
+                                <a href="./pages1/Unit_Status0.php">
                                 <i class="fa fa-info fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΚΑΤΑΣΤΑΣΗ ΣΕΛΙΔΑΣ
@@ -143,7 +144,7 @@
                         </ul>
                         <ul class="logout">
                             <li>
-                                <a href="./pages/login.php">
+                                <a href="./pages1/login.php">
                                     <i class="fa fa-sign-in fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΕΙΣΟΔΟΣ
@@ -167,17 +168,17 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
+                                        <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                     
                                     <div class="carousel-item">
-                                        <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
+                                        <img src="/images/old-radar.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
+                                        <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 350px; object-fit: cover;" alt="...">
+                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                 </div>
                                 <div id="carousel-text" style="height: 80px; overflow-y: auto; text-align: center; margin-top: 1rem;">
@@ -238,9 +239,9 @@
             </div>
         </div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.js"></script>
         <script>
             $(document).ready(function(){
                 var carouselTexts = [

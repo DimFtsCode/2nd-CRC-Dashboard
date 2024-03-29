@@ -1,11 +1,11 @@
 <html>
     <head>
-    <title> 2o Αεροπορικό Κέντρο Ελέγχου </title>
     <link rel="stylesheet" type="text/css" href="../index1.css">
         <meta charset="UTF-8">
         <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
         <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
     <body>
         <div class="container-fluid d-flex flex-column min-vh-100 " style="background: #1c4b82;">
             <div class="row">
@@ -46,7 +46,7 @@
                             </li>
                             <li class="has-subnav">
                                 <a href="./dktis_init0.php">
-                                    <i class="fa fa-star fa-2x fa-spin "></i>
+                                    <i class="fa fa-star fa-2x  "></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΔΚΤΗΣ
                                     </span>
@@ -54,7 +54,7 @@
                             </li>
                             <li class="has-subnav">
                                 <a href="./ydktis_init0.php">
-                                <i class="fa fa-star-half-full fa-2x"></i>
+                                <i class="fa fa-star-half-full fa-2x fa-spin"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΥΔΚΤΗΣ
                                     </span>
@@ -178,10 +178,9 @@
             </div>
         </div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('.dropdown-toggle').dropdown();

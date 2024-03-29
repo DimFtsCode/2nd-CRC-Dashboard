@@ -158,14 +158,14 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                            <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 60%; object-fit: cover;" alt="...">
                                         </div>
                                         
                                         <div class="carousel-item">
-                                            <img src="/images/snow-img1.jpg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                            <img src="/images/snow-img1.jpg" class="img-thumbnail" style="width: 100%; height: 60%; object-fit: cover;" alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="/images/snow-img2.jpeg" class="img-thumbnail" style="width: 100%; height: 300px; object-fit: cover;" alt="...">
+                                            <img src="/images/snow-img2.jpeg" class="img-thumbnail" style="width: 100%; height: 60%; object-fit: cover;" alt="...">
                                         </div>
                                     </div>
                                     <div id="carousel-text" style="height: 150px; overflow-y: auto; text-align: center; margin-top: 1rem;">
@@ -183,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="col-5" style="background: rgba(28, 75, 130, 0.7); border-radius: 10px;">
-                                <div class="content-container py-3" style="height: 300px; overflow-y: auto; text-align: center; margin-top: 1rem;">
+                                <div class="content-container py-3" style="height: 60%; overflow-y: auto; text-align: center; margin-top: 1rem;">
                                     <!-- Προσθέστε εδώ το νέο περιεχόμενο -->
                                     <h3>Νέος Τίτλος</h3>
                                     <p>Εδώ μπορείτε να προσθέσετε το περιεχόμενο που επιθυμείτε, διατηρώντας το ίδιο στυλ με τον carousel.</p>
