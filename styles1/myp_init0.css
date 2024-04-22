@@ -1,8 +1,8 @@
 .background1-image-wrapper {
-    background-image: url('/images/commanderrr.webp'); 
+    background-image: url('/images/myp.webp'); 
     background-size: 100%; 
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 

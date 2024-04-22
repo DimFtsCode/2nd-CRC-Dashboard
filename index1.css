@@ -191,14 +191,14 @@ padding:0;
 
 .footer-content {
     height: 60px;
-    line-height: 60px; /* Αυτό κεντραρίζει κάθετα το κείμενο μέσα στο footer */
+    line-height: 56px; /* Αυτό κεντραρίζει κάθετα το κείμενο μέσα στο footer */
     border-top: 3px solid #dd6b4d;
     text-align: center;
 }
 
 
 .background-image-wrapper {
-    background-image: url('/images/greece.webp'); /* Αλλάξτε το με την πραγματική διαδρομή της εικόνας σας */
+    background-image: url('/images/home.webp'); /* Αλλάξτε το με την πραγματική διαδρομή της εικόνας σας */
     background-size: 100%; /* ή use '100% 100%' για ακριβή ταιριάξιμο */
     background-position: center; /* Κεντραρίζει την εικόνα στην 'div' */
     background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται η εικόνα */
