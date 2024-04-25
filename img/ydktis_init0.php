@@ -4,9 +4,9 @@ require_once("../php_functions/functions.inc");
 
 <html>
     <head>
-    <title> 2o AKE / ΕΠΙΤΕΛΕΙΟ </title>        
+    <title> 2o AKE / ΥΔΚΤΗΣ </title>        
     <link rel="stylesheet" type="text/css" href="../index1.css">
-    <link rel="stylesheet" type="text/css" href="../styles1/epit_init0.css">
+    <link rel="stylesheet" type="text/css" href="../styles1/ydktis_init0.css">
     <meta charset="UTF-8">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
@@ -59,7 +59,7 @@ require_once("../php_functions/functions.inc");
                             </li>
                             <li class="has-subnav">
                                 <a href="./ydktis_init0.php">
-                                <i class="fa fa-star-half-full fa-2x  "></i>
+                                <i class="fa fa-star-half-full fa-2x fa-spin "></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΥΔΚΤΗΣ
                                     </span>
@@ -67,7 +67,7 @@ require_once("../php_functions/functions.inc");
                             </li>
                             <li class="has-subnav">
                                 <a href="./epit_init0.php">
-                                <i class="fa fa-comments fa-2x fa-spin"></i>
+                                <i class="fa fa-comments fa-2x"></i>
                                     <span class="nav-text" style="font-weight: bold;">
                                         ΕΠΙΤΕΛΕΙΟ
                                     </span>
@@ -163,7 +163,7 @@ require_once("../php_functions/functions.inc");
                     require_once '../php_functions/db_config/db_connect.php';
                     
                     $fileArray = array();   
-                    $branch = "ΕΠΙΤΕΛΕΙΟ";
+                    $branch = "ΥΔΚΤΗΣ";
 
                     $sql = "SELECT * FROM staticfiles WHERE staticfiles.branch='{$branch}'  ORDER BY staticfiles.fpos ASC";                  
                     
@@ -179,30 +179,49 @@ require_once("../php_functions/functions.inc");
                         <div class="col-md-12">
                             <div class="bordered-box " style="background-color: rgba(255,255,255,0.8); border-radius:10%;">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <h1 style="text-align: center;"><strong> Επιτελείο</strong> </h2>
+                                    <div class="col-2" >
+                                        <div style="border:2px solid #000 ">
+                                            <img src="../images/2ake_over1.jpg"  class="img-fluid rounded border" alt="Διοικητής">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row" style="text-align: center;">
-                                    <div class="col-3" >
-                                        <h3> <strong> Υπασπιστήριο </strong></h3>
-                                        <p style="font-size: 18px; margin-top: 2rem;"><strong>Εσωτερικό:</strong> 642-5001</p>
-                                        <p style="font-size: 18px;"><strong>E-mail:</strong> <a href="mailto:ypasp.2ake@haf.gr" style="font-weight: bold; text-decoration: none;">ypasp.2ake@haf.gr</a></p>
-                                    </div>
-                                    <div class="col-3">
-                                        <h3> <strong> T-A </strong></h3>
-                                        <p style="font-size: 18px; margin-top: 2rem;"><strong>Εσωτερικό:</strong> 642-5006</p>
-                                        <p style="font-size: 18px;"><strong>E-mail:</strong> <a href="mailto:grta.2ake@haf.gr" style="font-weight: bold; text-decoration: none;">grta.2ake@haf.gr</a></p>
-                                    </div>
-                                    <div class="col-3">
-                                        <h3> <strong> Γ.Α.Ε </strong></h3>
-                                        <p style="font-size: 18px; margin-top: 2rem;"><strong>Εσωτερικό:</strong> 642-5004</p>
-                                        <p style="font-size: 18px;"><strong>E-mail:</strong> <a href="mailto:gae.2ake@haf.gr" style="font-weight: bold; text-decoration: none;">gae.2ake@haf.gr</a></p>
+                                    <div class="col-7">
+                                        <h2 style="text-align: center;"> Υπoδιοικητής </h2>
+                                        <p style="text-align: center; font-size: 20px;">"Τον υποδιοικητή τριών δει μέμνησθαι: Πρώτον, ότι των εντολών του άρχοντος εκτελεί. Δεύτερον, ότι με δικαιοσύνη και σύνεση στους υφισταμένους απευθύνεται. Τρίτον, ότι η εξουσία του είναι δανεική και στην υπηρεσία του κοινού καλού αναπτύσσεται."</p>
                                     </div>    
                                     <div class="col-3">
-                                        <h3> <strong> Οικονομικό </strong></h3>
-                                        <p style="font-size: 18px; margin-top: 2rem;"><strong>Εσωτερικό:</strong> 642-5040</p>
-                                        <p style="font-size: 18px;"><strong>E-mail:</strong> <a href="mailto:oik.2ake@haf.gr" style="font-weight: bold; text-decoration: none;">oik.2ake@haf.gr</a></p>
+                                        <p style="font-size: 18px;"><strong>Εσωτερικό:</strong> 642-5002</p>
+                                        <p style="font-size: 18px;"><strong>E-mail:</strong> <a href="mailto:ydktis.2ake@ata.haf.gr" style="font-weight: bold; text-decoration: none;">ydktis.2ake@ata.haf.gr</a></p>
+                                        <p style="font-size: 18px;"><strong>Βιογραφικό: </strong><a href="#bioModal" data-toggle="modal" style="font-weight: bold; cursor: pointer;">Προβολή</a></p>
+                                    </div>
+                                    <!-- modal -->
+                                    <div class="modal fade" id="bioModal" tabindex="-1" role="dialog" aria-labelledby="bioModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document"> <!-- 'modal-lg' for larger modal -->
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="bioModalLabel">Βιογραφικό Υπδιοικητή</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Περιεχόμενο βιογραφικού -->
+                                               <p> Εδώ θα μπει το κείμενο του βιογραφικού...
+                                               <p> 1 </p>
+                                               <p> 2 </p>
+                                               <p> 3 </p>
+                                               <p> 4 </p>
+                                               <p> 5 </p>
+                                               <p> 6 </p>
+                                               <p> 7 </p>
+                                               <p> 8 </p>
+                                               <p> 9 </p>
+                                               <p> 10 </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείσιμο</button>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>    
                                 </div>
                             </div>
@@ -222,10 +241,10 @@ require_once("../php_functions/functions.inc");
                                             <a class="nav-link active" href="#folders" role="tab" data-toggle="tab" >Φάκελοι</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#general" role="tab" data-toggle="tab" >ΓΡ. Τ-Α ΕΘΝΙΚΑ</a>
+                                            <a class="nav-link" href="#general" role="tab" data-toggle="tab" >Γενικά (1 εως 10)</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="#general1" role="tab" data-toggle="tab" >ΓΡ. Τ-Α ΝΑΤΟ</a>
+                                            <a class="nav-link " href="#general1" role="tab" data-toggle="tab" >Γενικά (10 εως 20)</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
@@ -240,31 +259,31 @@ require_once("../php_functions/functions.inc");
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td> <a href="../web/epit/useful"> <span style="color: dd6b4d"><strong>Διάφορα / Χρήσιμα</strong></span></a> </td>                                                    
+                                                        <td> <a href="../web/ydktis/maps"> <span style="color: dd6b4d"><strong> Χάρτες </strong></span></a> </td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
-                                                        <td ><a href="../web/epit/prs"> <span style="color: dd6b4d"><strong>#~ Ενημέρωση Προσωπικού</strong></span></a> </td>                           
+                                                        <td ><a href="../web/ydktis/nomoi"> <span style="color: dd6b4d"><strong> Θεσμικά-Νόμοι </strong></span></a> </td>                           
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
-                                                        <td><a href="../web/xxx/checklists"> <span style="color: dd6b4d"><strong>Εγχειρίδια - CheckLists</strong></span></a> </td>
+                                                        <td><a href="../web/ydktis/support"> <span style="color: dd6b4d"><strong> Υποστήριξη </strong></span></a> </td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">4</th>
-                                                        <td> <a href=""> <span ><strong>...TDB</strong></span></a> </td>
+                                                        <td> <a href="../web/ydktis/ops"> <span style="color: dd6b4d"><strong> Current OPS </strong></span></a> </td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">5</th>
-                                                        <td> <a href=""> <span ><strong>...TDB</strong></span></a> </td>
+                                                        <td> <a href="../web/ydktis/checklists"> <span style="color: dd6b4d"><strong> Εγχειρίδια - CheckLists </strong></span></a> </td>  
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">6</th>
-                                                        <td> <a href=""> <span ><strong>...TDB</strong></span></a> </td>
+                                                        <td> <a href="../web/ydktis/useful"> <span style="color: dd6b4d" ><strong> Διάφορα / Χρήσιμα </strong></span></a> </td> 
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">7</th>
-                                                        <td> <a href=""> <span ><strong>...TDB</strong></span></a> </td>
+                                                        <td> <a href="../web/ydktis/kepix"> <span style="color: dd6b4d"><strong> ΚΕΠΙΧ </strong></span></a> </td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">8</th>
@@ -279,8 +298,9 @@ require_once("../php_functions/functions.inc");
                                                         <td> <a href=""> <span ><strong>...TDB</strong></span></a> </td>
                                                     </tr>
                                                 </tbody>
-                                            </table>  
-                                        </div>
+                                            </table>
+                                            
+                                        </div>  
                                         <div role="tabpanel" class="tab-pane" id="general">
                                             <table class="table">
                                                 <thead>
@@ -292,11 +312,11 @@ require_once("../php_functions/functions.inc");
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td><a href="<?php echo $fileArray[0][4]; ?>" target="_blank" style="color: dd6b4d" ><strong><?php echo $fileArray[0][3]; ?></strong></a></td>    
+                                                        <td><a href="<?php echo $fileArray[0][4]; ?>" target="_blank"><?php echo $fileArray[0][3]; ?></a></td>    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
-                                                        <td><a href="<?php echo $fileArray[1][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[1][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[1][4]; ?>" target="_blank"><?php echo $fileArray[1][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
@@ -328,7 +348,7 @@ require_once("../php_functions/functions.inc");
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">10</th>
-                                                        <td><a href="<?php echo $fileArray[9][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[9][3]; ?></strong></a></td>                                                   
+                                                        <td><a href="<?php echo $fileArray[9][4]; ?>" target="_blank"><?php echo $fileArray[9][3]; ?></a></td>                                                   
                                                     </tr>
                                                 </body>
                                             </table>
@@ -344,15 +364,15 @@ require_once("../php_functions/functions.inc");
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">11</th>
-                                                        <td><a href="<?php echo $fileArray[10][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[10][3]; ?></strong></a></td>    
+                                                        <td><a href="<?php echo $fileArray[10][4]; ?>" target="_blank"><?php echo $fileArray[10][3]; ?></a></td>    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">12</th>
-                                                        <td><a href="<?php echo $fileArray[11][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[11][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[11][4]; ?>" target="_blank"><?php echo $fileArray[11][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">13</th>
-                                                        <td><a href="<?php echo $fileArray[12][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[12][3]; ?></strong></a></td>                                                   
+                                                        <td><a href="<?php echo $fileArray[12][4]; ?>" target="_blank"><?php echo $fileArray[12][3]; ?></a></td>                                                   
                                                      </tr>
                                                     <tr>
                                                         <th scope="row">14</th>
@@ -387,9 +407,7 @@ require_once("../php_functions/functions.inc");
                                         </div>
                                     </div>
                                 </div>
-                                
-                             <!-- end of container -->
-                            </div>
+                            </div>    
                         </div>
                         <div class="col-2" ></div>
                         <div class="col-4">
@@ -397,13 +415,13 @@ require_once("../php_functions/functions.inc");
                                 <div class="container " style="border: 1px solid #000; margin-top: 2rem; background-color: #1c4b82;border-radius:7%; margin-bottom: 1rem;">
                                     <ul class="nav nav-tabs"style="margin-top: 1rem; border-bottom: 1px solid #000;">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="#more" role="tab" data-toggle="tab">Αρχεία</a>
+                                            <a class="nav-link active" href="#more" role="tab" data-toggle="tab">Αρχεία/Χάρτες/Εικόνες</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link " href="#more1" role="tab" data-toggle="tab">Χρήσιμα</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="#more2" role="tab" data-toggle="tab">Υποστήριξη (MISC)</a>
+                                            <a class="nav-link " href="#more2" role="tab" data-toggle="tab">Οργανώση-ΚΕΠΙΧ</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content" >
@@ -417,60 +435,60 @@ require_once("../php_functions/functions.inc");
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row">21</th>
+                                                        <th scope="row">1</th>
                                                         <td><a href="<?php echo $fileArray[20][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[20][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">22</th>
-                                                        <td><a href="<?php echo $fileArray[21][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[21][3]; ?></strong></a></td>                                                    
+                                                        <th scope="row">2</th>
+                                                        <td><a href="<?php echo $fileArray[21][4]; ?>" target="_blank"><?php echo $fileArray[21][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">23</th>
+                                                        <th scope="row">3</th>
                                                         <td><a href="<?php echo $fileArray[22][4]; ?>" target="_blank"><?php echo $fileArray[22][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">24</th>
+                                                        <th scope="row">4</th>
                                                         <td><a href="<?php echo $fileArray[23][4]; ?>" target="_blank"><?php echo $fileArray[23][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">25</th>
+                                                        <th scope="row">5</th>
                                                         <td><a href="<?php echo $fileArray[24][4]; ?>" target="_blank"><?php echo $fileArray[24][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">26</th>
+                                                        <th scope="row">6</th>
                                                         <td><a href="<?php echo $fileArray[25][4]; ?>" target="_blank"><?php echo $fileArray[25][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">27</th>
+                                                        <th scope="row">7</th>
                                                         <td><a href="<?php echo $fileArray[26][4]; ?>" target="_blank"><?php echo $fileArray[26][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">28</th>
+                                                        <th scope="row">8</th>
                                                         <td><a href="<?php echo $fileArray[27][4]; ?>" target="_blank"><?php echo $fileArray[27][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">29</th>
+                                                        <th scope="row">9</th>
                                                         <td><a href="<?php echo $fileArray[28][4]; ?>" target="_blank"><?php echo $fileArray[28][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">30</th>
+                                                        <th scope="row">10</th>
                                                         <td><a href="<?php echo $fileArray[29][4]; ?>" target="_blank"><?php echo $fileArray[29][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">31</th>
-                                                        <td><a href="<?php echo $fileArray[30][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[30][3]; ?></strong></a></td>                                                    
+                                                        <th scope="row">11</th>
+                                                        <td><a href="<?php echo $fileArray[30][4]; ?>" target="_blank"><?php echo $fileArray[30][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">32</th>
-                                                        <td><a href="<?php echo $fileArray[31][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[31][3]; ?></strong></a></td>                                                    
+                                                        <th scope="row">12</th>
+                                                        <td><a href="<?php echo $fileArray[31][4]; ?>" target="_blank"><?php echo $fileArray[31][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">33</th>
+                                                        <th scope="row">13</th>
                                                         <td><a href="<?php echo $fileArray[32][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[32][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <!-- <tr>
                                                         <th scope="row">14</th>
-                                                        <td><a href="<?php echo $fileArray[28][4]; ?>" target="_blank"><?php echo $fileArray[28][3]; ?></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[33][4]; ?>" target="_blank"><?php echo $fileArray[33][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">15</th>
@@ -478,7 +496,7 @@ require_once("../php_functions/functions.inc");
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">16</th>
-                                                        <td> <a href=""> <span style="color: dd6b4d"><strong> ...TBD </strong></span></a> </td>
+                                                        <td> <a href="./useful_links.php"> <span style="color: dd6b4d"><strong> Χρήσιμες Διασυνδέσεις </strong></span></a> </td>
                                                     </tr> -->
                                                 </tbody>
                                             </table>
@@ -493,68 +511,68 @@ require_once("../php_functions/functions.inc");
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row">34</th>
-                                                        <td><a href="<?php echo $fileArray[33][4]; ?>" target="_blank" ><?php echo $fileArray[33][3]; ?></a></td>                                                    
+                                                        <th scope="row">1</th>
+                                                        <td><a href="<?php echo $fileArray[33][4]; ?>" target="_blank"><?php echo $fileArray[33][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">35</th>
-                                                        <td><a href="<?php echo $fileArray[34][4]; ?>" target="_blank" ><?php echo $fileArray[34][3]; ?></a></td>                                                    
+                                                        <th scope="row">2</th>
+                                                        <td><a href="<?php echo $fileArray[34][4]; ?>" target="_blank"><?php echo $fileArray[34][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">36</th>
-                                                        <td><a href="<?php echo $fileArray[35][4]; ?>" target="_blank" ><?php echo $fileArray[35][3]; ?></a></td>                                                    
+                                                        <th scope="row">3</th>
+                                                        <td><a href="<?php echo $fileArray[35][4]; ?>" target="_blank"><?php echo $fileArray[35][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">37</th>
-                                                        <td><a href="<?php echo $fileArray[36][4]; ?>" target="_blank" ><?php echo $fileArray[36][3]; ?></a></td>                                                    
+                                                        <th scope="row">4</th>
+                                                        <td><a href="<?php echo $fileArray[36][4]; ?>" target="_blank"><?php echo $fileArray[36][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">38</th>
+                                                        <th scope="row">5</th>
                                                         <td><a href="<?php echo $fileArray[37][4]; ?>" target="_blank"><?php echo $fileArray[37][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">39</th>
-                                                        <td><a href="<?php echo $fileArray[38][4]; ?>" target="_blank" ><?php echo $fileArray[38][3]; ?></a></td>                                                    
+                                                        <th scope="row">6</th>
+                                                        <td><a href="<?php echo $fileArray[37][4]; ?>" target="_blank"><?php echo $fileArray[37][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">40</th>
-                                                        <td><a href="<?php echo $fileArray[39][4]; ?>" target="_blank" ><?php echo $fileArray[39][3]; ?></a></td>                                                    
+                                                        <th scope="row">7</th>
+                                                        <td><a href="<?php echo $fileArray[38][4]; ?>" target="_blank"><?php echo $fileArray[38][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">41</th>
-                                                        <td><a href="<?php echo $fileArray[40][4]; ?>" target="_blank"><?php echo $fileArray[40][3]; ?></a></td>                                                    
+                                                        <th scope="row">8</th>
+                                                        <td><a href="<?php echo $fileArray[39][4]; ?>" target="_blank"><?php echo $fileArray[39][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">42</th>
-                                                        <td><a href="<?php echo $fileArray[41][4]; ?>" target="_blank" ><?php echo $fileArray[41][3]; ?></a></td>                                                    
+                                                        <th scope="row">9</th>
+                                                        <td><a href="<?php echo $fileArray[40][4]; ?>" target="_blank"><?php echo $fileArray[41][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">43</th>
+                                                        <th scope="row">10</th>
+                                                        <td><a href="<?php echo $fileArray[41][4]; ?>" target="_blank"><?php echo $fileArray[41][3]; ?></a></td>                                                    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">11</th>
                                                         <td><a href="<?php echo $fileArray[42][4]; ?>" target="_blank"><?php echo $fileArray[42][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">44</th>
+                                                        <th scope="row">12</th>
                                                         <td><a href="<?php echo $fileArray[43][4]; ?>" target="_blank"><?php echo $fileArray[43][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">45</th>
-                                                        <td><a href="<?php echo $fileArray[44][4]; ?>" target="_blank" ><?php echo $fileArray[44][3]; ?></a></td>                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">46</th>
-                                                        <td><a href="<?php echo $fileArray[45][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[45][3]; ?></strong></a></td>                                                    
+                                                        <th scope="row">13</th>
+                                                        <td><a href="<?php echo $fileArray[44][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[44][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <!-- <tr>
                                                         <th scope="row">14</th>
-                                                        <td><a href="<?php echo $fileArray[46][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[46][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[42][4]; ?>" target="_blank"><?php echo $fileArray[42][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">15</th>
-                                                        <td><a href="<?php echo $fileArray[47][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[47][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[43][4]; ?>" target="_blank"><?php echo $fileArray[43][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">16</th>
-                                                        <td><a href="<?php echo $fileArray[48][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[48][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[44][4]; ?>" target="_blank"><?php echo $fileArray[44][3]; ?></a></td>                                                    
                                                     </tr> -->
                                                 </tbody>
                                             </table>
@@ -569,56 +587,56 @@ require_once("../php_functions/functions.inc");
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row">47</th>
+                                                        <th scope="row">1</th>
+                                                        <td><a href="<?php echo $fileArray[45][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[45][3]; ?></strong></a></td>                                                    
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
                                                         <td><a href="<?php echo $fileArray[46][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[46][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">48</th>
-                                                        <td><a href="<?php echo $fileArray[47][4]; ?>" target="_blank" ><?php echo $fileArray[47][3]; ?></a></td>                                                    
+                                                        <th scope="row">3</th>
+                                                        <td><a href="<?php echo $fileArray[47][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[47][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">49</th>
-                                                        <td><a href="<?php echo $fileArray[48][4]; ?>" target="_blank" ><?php echo $fileArray[48][3]; ?></a></td>                                                    
+                                                        <th scope="row">4</th>
+                                                        <td><a href="<?php echo $fileArray[48][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[48][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">50</th>
-                                                        <td><a href="<?php echo $fileArray[49][4]; ?>" target="_blank" ><?php echo $fileArray[49][3]; ?></a></td>                                                    
+                                                        <th scope="row">5</th>
+                                                        <td><a href="<?php echo $fileArray[49][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[49][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">51</th>
-                                                        <td><a href="<?php echo $fileArray[50][4]; ?>" target="_blank" ><?php echo $fileArray[50][3]; ?></a></td>                                                    
+                                                        <th scope="row">6</th>
+                                                        <td><a href="<?php echo $fileArray[50][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[50][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">52</th>
-                                                        <td><a href="<?php echo $fileArray[51][4]; ?>" target="_blank" ><?php echo $fileArray[51][3]; ?></a></td>                                                    
+                                                        <th scope="row">7</th>
+                                                        <td><a href="<?php echo $fileArray[51][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[51][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">53</th>
-                                                        <td><a href="<?php echo $fileArray[52][4]; ?>" target="_blank" ><?php echo $fileArray[52][3]; ?></a></td>                                                    
+                                                        <th scope="row">8</th>
+                                                        <td><a href="<?php echo $fileArray[52][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[52][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">54</th>
-                                                        <td><a href="<?php echo $fileArray[53][4]; ?>" target="_blank" ><?php echo $fileArray[53][3]; ?></a></td>                                                    
+                                                        <th scope="row">9</th>
+                                                        <td><a href="<?php echo $fileArray[53][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[53][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">55</th>
-                                                        <td><a href="<?php echo $fileArray[54][4]; ?>" target="_blank" ><?php echo $fileArray[54][3]; ?></a></td>                                                    
+                                                        <th scope="row">10</th>
+                                                        <td><a href="<?php echo $fileArray[54][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[54][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">56</th>
-                                                        <td><a href="<?php echo $fileArray[55][4]; ?>" target="_blank" ><?php echo $fileArray[55][3]; ?></a></td>                                                    
+                                                        <th scope="row">11</th>
+                                                        <td><a href="<?php echo $fileArray[55][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[55][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">57</th>
-                                                        <td><a href="<?php echo $fileArray[56][4]; ?>" target="_blank" ><?php echo $fileArray[56][3]; ?></a></td>                                                    
+                                                        <th scope="row">12</th>
+                                                        <td><a href="<?php echo $fileArray[56][4]; ?>" target="_blank"><?php echo $fileArray[56][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">58</th>
+                                                        <th scope="row">13</th>
                                                         <td><a href="<?php echo $fileArray[57][4]; ?>" target="_blank"><?php echo $fileArray[57][3]; ?></a></td>                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">59</th>
-                                                        <td><a href="<?php echo $fileArray[58][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[58][3]; ?></strong></a></td>                                                    
                                                     </tr>
                                                     <!-- <tr>
                                                         <th scope="row">14</th>
@@ -626,7 +644,7 @@ require_once("../php_functions/functions.inc");
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">15</th>
-                                                        <td><a href="<?php echo $fileArray[58][4]; ?>" target="_blank" style="color: dd6b4d"><strong><?php echo $fileArray[58][3]; ?></strong></a></td>                                                    
+                                                        <td><a href="<?php echo $fileArray[58][4]; ?>" target="_blank"><?php echo $fileArray[58][3]; ?></a></td>                                                    
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">16</th>

@@ -168,6 +168,9 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
+                                        <img src="/images/SMYA-TTH.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="carousel-item ">
                                         <img src="/images/2ake_over1.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                     
@@ -176,9 +179,6 @@
                                     </div>
                                     <div class="carousel-item">
                                         <img src="/images/rafale.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/images/MINISTER.jpg" class="img-thumbnail" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
                                     </div>
                                 </div>
                                 <div id="carousel-text" style="height: 80px; overflow-y: auto; text-align: center; margin-top: 1rem;">
@@ -245,11 +245,10 @@
         <script>
             $(document).ready(function(){
                 var carouselTexts = [
+                    { title: "Επίσκεψη ΣΜΥΑ", description: "Προγραμματισμένη εκπαιδευτική επίσκεψη των ΔΥΙΙΙ ειδικότητας Τηλεπικοινωνιών-Ηλεκτρονικών στο 2ο ΑΚΕ." },
                     { title: "Γενικά", description: "Το 2ο ΑΚΕ βρίσκεται στην κορυφή του όρους Πάρνηθα, σε υψόμετρο 1413 μέτρα" },
                     { title: "Ιστορικά Στοιχεία", description: "Η Μονάδα λειτουργεί και επιχειρεί από το 1958, αρχικά ως 3η ΜΚΣΕ, στη συνέχεια ως 2ο ΚΕΠ και από 2019 ως 2ο ΑΚΕ" },
                     { title: "Αποστολή", description: "Αποστολή του 2ου ΑΚΕ είναι η επιτυχής εκτέλεση των λειτουργιών ενεργού Αεράμυνας εντός της περιοχής ευθύνης του, για την ακύρωση ή τη μείωση της αποτελεσματικότητας της εχθρικής από αέρος δράσης, σε Εθνικό και Συμμαχικό επίπεδο." },
-                    { title: "Επίσκεψη Υπουργού", description: "Επίσκεψη Υπουργού στο 2ο ΑΚΕ συνοδεία του Αρχηγού ΓΕΑ." }
-
                 ];
                 // Ορίστε το αρχικό κείμενο με την πρώτη είσοδο του πίνακα
                 $("#carousel-text").html(
