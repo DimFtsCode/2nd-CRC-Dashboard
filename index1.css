@@ -1,0 +1,222 @@
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); */
+
+
+html, body {
+    height: 100%;
+}
+/* Προσαρμογή του header */
+.header-content {
+    padding-top: 0.100rem; 
+    padding-bottom: 0.100rem; 
+    position: relative;
+    border-bottom:3px solid #dd6b4d; 
+
+}
+
+.header-content h1 {
+    margin-top: 0.100rem; 
+    margin-bottom: 0.100rem; 
+    font-size: 30px;
+}
+
+.header-content p {
+    margin-top: 0.100rem; 
+    margin-bottom: 0.100rem;
+    font-size: 17px; 
+}
+
+
+.header-image {
+    position: absolute; 
+    left: 30%; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.header-image1 {
+    position: absolute; 
+    right: 20%; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.header-text {
+    color: #dae1e7;
+}
+
+
+.fa-2x {
+/* font-size: 2em; */
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 35px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+/* .main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+} */
+
+.main-menu {
+    background: #dae1e7; 
+    position:static;
+    
+    height: 100%; 
+    overflow:hidden;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+margin-left: -30px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#183661;
+font-family: 'Roboto', sans-serif; /* Αλλαγή εδώ */
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:left;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:220px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.main-menu li.active>a {
+    color: #dd6b4d; /* ή οποιοδήποτε χρώμα προτιμάτε */
+}
+
+.main-menu li.active > a > .nav-text {
+    text-decoration: underline; /* Υπογραμμίζει το κείμενο */
+    /* Προσθέστε εδώ οποιεσδήποτε άλλες CSS ιδιότητες θέλετε να εφαρμόσετε στο span */
+}
+
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+/* 
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+} */
+
+/* nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+} */
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#dd6b4d;
+}
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu li.active1 > a, .main-menu li.active > a > .nav-text {
+    filter: blur(0.5px); /* Καθαρό κείμενο για active links */
+    font-weight: bold;
+}
+
+
+
+
+.links-section a {
+    color: #dae1e7; /* Χρώμα κειμένου */
+    text-decoration: none; /* Αφαιρέστε το default υπογράμμισμα */
+}
+
+.links-section a:hover, .links-section a:focus {
+    text-decoration: underline; /* Προσθέστε υπογράμμισμα στο hover/focus */
+    text-decoration-color: #dd6b4d; /* Πορτοκαλί υπογράμμισμα */
+}
+
+.footer-content {
+    height: 60px;
+    line-height: 56px; /* Αυτό κεντραρίζει κάθετα το κείμενο μέσα στο footer */
+    border-top: 3px solid #dd6b4d;
+    text-align: center;
+}
+
+
+.background-image-wrapper {
+    background-image: url('/images/home.webp'); /* Αλλάξτε το με την πραγματική διαδρομή της εικόνας σας */
+    background-size: 100%; /* ή use '100% 100%' για ακριβή ταιριάξιμο */
+    background-position: center; /* Κεντραρίζει την εικόνα στην 'div' */
+    background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται η εικόνα */
+}
+
+.nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #1c4b82; /* Αλλάξτε το χρώμα εδώ */
+}
+
+
+
+.carousel-indicators .active {
+    background-color: #1c4b82;; /* Μαύρο για το ενεργό indicator */
+}

@@ -1,0 +1,115 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    background-color: #eeeeee;
+    text-decoration: underline;
+}
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+#header {
+    background-color: #91cbe8;
+    padding: 10px;
+    text-align: center;
+} 
+#menu {
+    float: left;
+    width: 100%;
+    background-color: #0c0c0c;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline; 
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    border-right: 2px solid #FFFFFF;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menu li a:hover {
+    background-color: #5bc0de;
+}
+
+#mainContainer {
+    float: left;
+    width: 100%;
+}
+
+#leftbar {
+    clear: left;
+    float: left; 
+    width: 20%;
+    padding: 20px 0;
+    margin: 0;
+    display: inline;
+    background-color: #91cbe8;
+}
+
+#content {
+    
+    float: left;
+    width: 75%;
+    padding: 10px 0;
+    margin: 0 0 0 5%;
+    display: inline;
+}
+
+#sidebar {
+    
+    clear: right; 
+    width: 30%;
+    padding: 20px 0;
+    margin: 0;
+    display: inline;
+    background-color: #428bca;
+}
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    text-align: center;
+    padding: 1rem;  
+}
+
+table {
+    width: 90%;
+   /* border: 1px solid #b52b27; */   
+}
+
+th.code, th.Name, th.custom, th.sideR {
+    width: 30%;
+    text-align: center;
+    border: solid 1px red;
+}
+
+td.code, td.Name, td.custom, td.sideR {
+   border-left: solid 1px red;
+   border-right:  solid 1px red;   
+}
+
+td.Last {
+    border-left: solid 1px red;
+    border-right:  solid 1px red; 
+    border-bottom: solid 1px red;
+}
+
+tr{
+    font-style: italic;
+    font-size: 15pt;
+    color: black;    
+}    
+
+th.photo {
+    width: 25%;
+    text-align: center;
+}
+
+td.photo {    
+    text-align: center;
+}

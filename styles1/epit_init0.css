@@ -1,0 +1,46 @@
+.background1-image-wrapper {
+    background-image: url('/images/ta.webp'); 
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.bordered-box {
+    border: 2px solid #000; 
+    padding: 20px; 
+    margin: 10px; 
+  }
+
+.main-menu>ul.logout1{
+    position:fixed;
+    left:0;
+    margin-top: 2rem;
+}
+
+.table thead tr {
+    border-bottom: 1px solid #000;
+}
+.table tbody td {
+    border-bottom: 1px solid #000;
+}
+.table tbody th {
+    border-bottom: 1px solid #000;
+}
+
+.nav-tabs {
+    margin-top: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+.nav-link {
+    background-color: #1c4b82; /* Πιο σκούρο μπλε για τα κουμπιά ώστε να δημιουργείται αντίθεση με το background */
+    color: #fff; /* Λευκό κείμενο για καλύτερη αναγνωσιμότητα */
+    border: 1px solid #000; /* Προσθήκη ορίου για διακριτικότητα */
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: #000307; /* Χρήση του ίδιου χρώματος με το background του container για το ενεργό κουμπί */
+    color: #dae1e7; /* Χρώμα κειμένου που να αντιστοιχεί στο αρχικό χρώμα background των κουμπιών για αντίθεση */
+}
+
