@@ -48,7 +48,56 @@ if (!$user->isLoggedIn) {
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style>
+        /* Style for the tooltip */
+            .tooltip-box {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                padding: 10px;
+                z-index: 1000;
+                width: 200px;
+            }
+            .tooltip-icon {
+                margin-left: 5px;
+                cursor: pointer;
+                color: #007bff;
+            }
+            
 
+        </style>
+        <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function showTooltip(element, message) {
+                    var tooltipBox = $('<div class="tooltip-box">' + message + '</div>');
+                    $('body').append(tooltipBox);
+                    tooltipBox.css({
+                        top: element.offset().top - tooltipBox.outerHeight() - 10,
+                        left: element.offset().left - tooltipBox.outerWidth() + element.outerWidth()
+                    });
+                    tooltipBox.show();
+                    element.data('tooltipBox', tooltipBox);
+                }
+
+                function hideTooltip(element) {
+                    var tooltipBox = element.data('tooltipBox');
+                    if (tooltipBox) {
+                        tooltipBox.remove();
+                        element.removeData('tooltipBox');
+                    }
+                }
+
+                $('.tooltip-icon').hover(function(event) {
+                    var message = '<img src="../images/1ake_entrance.jpg" alt="Οδηγίες" width="300" height="230">';
+                    showTooltip($(this), message);
+                }, function() {
+                    hideTooltip($(this));
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -526,8 +575,7 @@ if (!$user->isLoggedIn) {
                                 <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> Αριθ.Αναχαιτ#1 </label>
                                     </br>
-                                    </br>                             
-                                    <select class="form-control" id="numint" name="numint" required >
+                                    <select class="form-control" id="numint" name="numint">
                                         <option value="" selected disabled> Αριθ.Αναχαιτ.</option>
                                         <?php
                                         for ($arx = 1; $arx < 13; $arx++) {
@@ -540,20 +588,21 @@ if (!$user->isLoggedIn) {
                                 </div>                                
 
                                 <div class="col-md-2 mb-3">
-                                    <label class="col-sm-2 control-label"> Είδος_ΑΝΧ#1 </label >
+                                    
+                                    <label class="control-label"> Είδος_ΑΝΧ#1 </label>
+                                    <i class="fa fa-question-circle tooltip-icon"></i>
                                     </br>
-                                    </br>
-                                    <select class="form-control"  id="intype"  name="intype" required>
+                                    <select class="form-control" id="intype" name="intype" required>
                                         <option value="" selected disabled> Είδος_ΑΝΧ </option>
                                         <?php
                                         require_once '../php_functions/db_config/db_connect.php';
                                         $db = new DbMgmt;
-                                        $sql = "SELECT  * FROM `intertype` ORDER BY `inter_id` ";
+                                        $sql = "SELECT * FROM `intertype` ORDER BY `inter_id` ";
                                         $res = $db->runQuery($sql);
                                         while ($row_res = mysqli_fetch_array($res)) {
                                             echo "<option value=\"" . $row_res['intertype'] . "\">" . $row_res['intertype'] . "</option>";
                                         }
-                                        ?>                                         
+                                        ?>
                                         echo "<option value="NULL">NULL</option>\n";
                                     </select>
                                 </div>              
@@ -561,7 +610,6 @@ if (!$user->isLoggedIn) {
                                <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> Αριθ.Αναχαιτ#2 </label>
                                     </br>
-                                    </br>                             
                                     <select class="form-control" id="numint2" name="numint2">
                                         <option value="" selected disabled> Αριθ.Αναχαιτ.</option>
                                         <?php
@@ -575,21 +623,21 @@ if (!$user->isLoggedIn) {
                                 </div>                                
 
                                 <div class="col-md-2 mb-3">
-                                    <label class="col-sm-2 control-label"> Είδος_ΑΝΧ#2 </label >
+                                    <label class="control-label"> Είδος_ΑΝΧ#2 </label>
+                                    <i class="fa fa-question-circle tooltip-icon"></i>
                                     </br>
-                                    </br>
-                                    <select class="form-control"  id="intype2"  name="intype2" >
+                                    <select class="form-control" id="intype2" name="intype2">
                                         <option value="" selected disabled> Είδος_ΑΝΧ </option>
                                         <?php
                                         require_once '../php_functions/db_config/db_connect.php';
                                         $db = new DbMgmt;
-                                        $sql = "SELECT  * FROM `intertype` ORDER BY `inter_id` ";
+                                        $sql = "SELECT * FROM `intertype` ORDER BY `inter_id` ";
                                         $res = $db->runQuery($sql);
                                         while ($row_res = mysqli_fetch_array($res)) {
                                             echo "<option value=\"" . $row_res['intertype'] . "\">" . $row_res['intertype'] . "</option>";
                                         }
-                                        ?>                                         
-                                        echo "<option value="NULL">NULL</option>\n";
+                                        ?>
+                                        <option value="NULL">NULL</option>
                                     </select>
                                 </div>  
 
@@ -620,7 +668,6 @@ if (!$user->isLoggedIn) {
                                  <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> Position </label>
                                     </br>
-                                    </br>
                                     <select class="form-control"  id="post"  name="post" required>
                                         <option value="" selected disabled> Θέση Εργασίας </option>
                                         <?php
@@ -638,7 +685,6 @@ if (!$user->isLoggedIn) {
                                 <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> AJ_Yes_No </label>
                                         </br>
-                                        </br>                                
                                             <select class="form-control" id="aj" name="aj" required>
                                             <option value="" selected disabled> AJ </option>
                                             <option class="text-primary" value="No">No</option>  
@@ -649,7 +695,6 @@ if (!$user->isLoggedIn) {
                                 
                                <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> AJ_NET </label>
-                                    </br>
                                     </br>
                                     <select class="form-control"  id="ajnet"  name="ajnet" required>
                                         <option value="" selected disabled> HAVE QUICK </option>
@@ -669,7 +714,6 @@ if (!$user->isLoggedIn) {
                                 <div class="col-md-2 mb-3">
                                     <label class="col-sm-2 control-label"> Crypto_Yes_No </label>
                                         </br>
-                                        </br>                                
                                             <select class="form-control" id="crypto" name="crypto" required>
                                             <option value="" selected disabled> CRYPTO </option>
                                             <option class="text-primary" value="No">No</option>  
@@ -684,7 +728,7 @@ if (!$user->isLoggedIn) {
                                                         
                             <div class="form-row">
                                 <div class="col-md-2 mb-3">
-                                    <label class="col-sm-2 control-label"> L-16_Yes_No </label>
+                                    <label class="col-sm-4 control-label"> L-16_Yes_No </label>
                                         </br>
                                                                         
                                             <select class="form-control" id="mids" name="mids" required>
@@ -729,7 +773,16 @@ if (!$user->isLoggedIn) {
                                             <option class="text-primary" value="No">No</option>  
                                             <option class="text-primary" value="Yes">Yes</option>  
                                         </select>                                                                  
-                                </div>                               
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <label class="col-sm-2 control-label" style="color: red;"><strong>KIO</strong></label>
+                                    </br>
+                                    <select class="form-control" id="kio" name="kio" required>
+                                        <option class="text-primary" value="No">No</option>  
+                                        <option class="text-primary" value="Yes">Yes</option>  
+                                    </select>                                                                  
+                                </div>
+                               
 
                             </div>
                                 
@@ -743,7 +796,20 @@ if (!$user->isLoggedIn) {
                             
                             <?php echo nl2br("**************** **********  Additional Data  ***************** **************");?>
                             </br>
-                    
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Χρονισμός Ασυρμάτου :</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" id="timing" name="timing" required>
+                                        <option value="" selected disabled>Επιλέξτε Χρονισμό Ασυρμάτου</option>
+                                        <option value="Μέσω Α/Φ">Μέσω Α/Φ</option>
+                                        <option value="Μέσω 338.025">Μέσω 338.025</option>
+                                        <option value="Μέσω GPS">Μέσω GPS</option>
+                                        <option value="Μέσω Ασυρμάτου Άλλης Μονάδας">Μέσω Ασυρμάτου Άλλης Μονάδας</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </br>
+                            </br>                
                             <div class="form-group">
                                 <label class="col-sm-2 control-label"> Λόγος ΜΗ Μετάπτωσης σε AJ NET : </label>
                                 <div class="col-sm-4">
@@ -772,6 +838,7 @@ if (!$user->isLoggedIn) {
                                                         
                             </br>
                             </br>
+                            
                              <div class="form-group">
                                 <label class="col-sm-2 control-label"> Λόγος ΜΗ Μετάπτωσης σε ΚΡΙΚΟ : </label>
                                 <div class="col-sm-4">
@@ -795,7 +862,32 @@ if (!$user->isLoggedIn) {
                             </br>
                             </br>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label"> Σχόλια :(Θα αναγράφονται τα στοιχεία των ΤΕ, ίχνος, Α/Φ, όπλα, διαμόρφωση και οποιοδήποτε άλλο σχόλιο, max 512 χαρακτήρες.)  </label>
+                                <label class="col-sm-2 control-label">Briefing :</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" id="briefing" name="briefing" required>
+                                        <option value="" selected disabled>Select Briefing Status</option>
+                                        <option class="text-primary" value="No">No</option>
+                                        <option class="text-primary" value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </br>
+                            </br>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"> Debriefing : </label>
+                                <div class="col-sm-4">                                    
+                                    <select class="form-control" id="debrief" name="debrief" required>
+                                        <option value="" selected disabled> Select Debrief Status </option>
+                                        <option class="text-primary" value="Αναμονή πληρωμάτων">Αναμονή πληρωμάτων</option>
+                                        <option class="text-primary" value="Μή εύρεση πληρωμάτων">Μή εύρεση πληρωμάτων</option>  
+                                        <option class="text-primary" value="Εκτελέστηκε">Εκτελέστηκε</option> 
+                                    </select>                                          
+                                </div>
+                            </div>
+                            </br>
+                            </br>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label"> Σχόλια :(Θα αναγράφονται τα στοιχεία των ΤΕ, ίχνος, Α/Φ, όπλα, διαμόρφωση και οποιοδήποτε άλλο σχόλιο,<span style="color: red;">ΚΙΟ αναλυτικά,</span> max 512 χαρακτήρες.)  </label>
                                 <div class="col-sm-4">
                                     <textarea  id="remark" name="remark" class="form-control" rows="5" placeholder="remark" ></textarea>
                                 </div>

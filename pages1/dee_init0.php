@@ -4,13 +4,14 @@ require_once("../php_functions/functions.inc");
 
 <html>
     <head>
-    <title> 2o AKE / ΔΕΕ-ΠΔ </title>        
-    <link rel="stylesheet" type="text/css" href="../index1.css">
-    <link rel="stylesheet" type="text/css" href="../styles1/dee_init0.css">
-    <meta charset="UTF-8">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+        <title> 2o AKE / ΔΕΕ-ΠΔ </title>        
+        <link rel="stylesheet" type="text/css" href="../index1.css">
+        <link rel="stylesheet" type="text/css" href="../styles1/dee_init0.css">
+        <meta charset="UTF-8">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
     <body>
         <div class="container-fluid d-flex flex-column min-vh-100 bg-white" >
             <div class="row" style="background: #1c4b82;">

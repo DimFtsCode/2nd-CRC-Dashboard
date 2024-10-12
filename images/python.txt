@@ -1,0 +1,23 @@
+pip install pillow
+python create_image.py
+from PIL import Image, ImageDraw
+
+# Δημιουργία νέας εικόνας με τις επιθυμητές διαστάσεις
+width, height = 400, 1000
+background_color = (169, 169, 169)  # γκρι χρώμα
+image = Image.new("RGB", (width, height), background_color)
+
+# Δημιουργία αντικειμένου για σχέδιο
+draw = ImageDraw.Draw(image)
+
+# Σχεδίαση λευκών διαγώνιων γραμμών για να μοιάζουν με neural networks
+spacing = 50
+for i in range(-height, width, spacing):
+    draw.line((i, 0, 0, i + height), fill="white", width=1)
+    draw.line((width - i, 0, width, i + height), fill="white", width=1)
+
+# Αποθήκευση της εικόνας σε αρχείο
+output_path = "grey_neural_networks_background_400x1000.png"
+image.save(output_path)
+
+

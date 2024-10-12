@@ -1,6 +1,10 @@
+<?php
+require_once("../php_functions/functions.inc");
+?>
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="../index1.css">
+        <link rel="stylesheet" type="text/css" href="../index1.css">
+        <link rel="stylesheet" type="text/css" href="../styles1/ake_init0.css">
         <meta charset="UTF-8">
         <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
@@ -141,7 +145,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="logout">
+                        <ul class="logout1">
                             <li>
                                 <a href="./login.php">
                                     <i class="fa fa-sign-in fa-2x "></i>
@@ -153,10 +157,154 @@
                         </ul>
                     </div>
                 </div>
-                <div class="background-image-wrapper col-10">
+                <?php                                       
+                    // require_once '../php_functions/Cvutils/utils.php';
+                    require_once '../php_functions/db_config/db_connect.php';
+                    
+                    $fileArray = array();   
+                    $branch = "ΑΚΕ";
+
+                    $sql = "SELECT * FROM staticfiles WHERE staticfiles.branch='{$branch}'  ORDER BY staticfiles.fpos ASC";                  
+                    
+                   $db = new DbMgmt;
+                   $res = $db->runQuery($sql);                                                                              
+                   while ($row_file = mysqli_fetch_array($res)) {
+                        $fileArray[] = $row_file;
+                    } 
+                    // echo $fileArray[0][5]; 
+                ?> 
+                <div class="background1-image-wrapper col-10">
                     <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-9 " >                            
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <div class="bordered-box " style="background-color: rgba(255,255,255,0.8); border-radius:10%;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 style="text-align: center;"><strong>Ενημέρωση Προσωπικού</strong> </h2>
+                                        <p style="font-size: 16px; margin-top: 2rem;text-align: center;"><strong>" Η παρούσα σελίδα συμβάλλει στην άμεση και έγκαιρη ενημέρωση του Προσωπικού, επί διαφόρων θεμάτων..."</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8" >
+                            <div class="container " style="border: 1px solid #000; margin-top: 2rem; background-color:rgba(28, 75, 130, 0.95) ;border-radius:3%; margin-bottom: 1rem;">
+                                    <ul class="nav nav-tabs"style="margin-top: 1rem; border-bottom: 1px solid #000;">
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#more" role="tab" data-toggle="tab">Γενικά</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#more1" role="tab" data-toggle="tab">Αρχεία</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#more2" role="tab" data-toggle="tab">Χρήσιμα</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#more3" role="tab" data-toggle="tab">Υποστήριξη (MISC)</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" >
+                                        <div role="tabpanel" class="tab-pane" id="more">
+                                            <table class="table" >
+                                                <thead>
+                                                    <tr>
+                                                        <th style="border-bottom: 2px solid #000;">#</th>
+                                                        <th style="border-bottom: 2px solid #000;">Περιγραφή</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    for ($i = 0; $i <= 19; $i++) {  // Αρχικοί δείκτες για την καρτέλα 'more'
+                                                        echo '<tr>';
+                                                        echo '<th scope="row">' . ($i+1) . '</th>';
+                                                        if ($fileArray[$i][3] !== '... to be determined') {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank" style="color: dd6b4d;"><strong>' . htmlspecialchars($fileArray[$i][3]) . '</strong></a></td>';
+                                                        } else {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank">' . htmlspecialchars($fileArray[$i][3]) . '</a></td>';
+                                                        }
+                                                        echo '</tr>';
+                                                    }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="more1">
+                                            <table class="table" >
+                                                <thead>
+                                                    <tr>
+                                                        <th style="border-bottom: 2px solid #000;">#</th>
+                                                        <th style="border-bottom: 2px solid #000;">Περιγραφή</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    for ($i = 20; $i <= 39; $i++) {  // Αρχικοί δείκτες για την καρτέλα 'more'
+                                                        echo '<tr>';
+                                                        echo '<th scope="row">' . ($i+1) . '</th>';
+                                                        if ($fileArray[$i][3] !== '... to be determined') {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank" style="color: dd6b4d;"><strong>' . htmlspecialchars($fileArray[$i][3]) . '</strong></a></td>';
+                                                        } else {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank">' . htmlspecialchars($fileArray[$i][3]) . '</a></td>';
+                                                        }
+                                                        echo '</tr>';
+                                                    }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="more2">
+                                            <table class="table" >
+                                                <thead>
+                                                    <tr>
+                                                        <th style="border-bottom: 2px solid #000;">#</th>
+                                                        <th style="border-bottom: 2px solid #000;">Περιγραφή</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    for ($i = 40; $i <= 59; $i++) {  // Αρχικοί δείκτες για την καρτέλα 'more'
+                                                        echo '<tr>';
+                                                        echo '<th scope="row">' . ($i+1) . '</th>';
+                                                        if ($fileArray[$i][3] !== '... to be determined') {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank" style="color: dd6b4d;"><strong>' . htmlspecialchars($fileArray[$i][3]) . '</strong></a></td>';
+                                                        } else {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank">' . htmlspecialchars($fileArray[$i][3]) . '</a></td>';
+                                                        }
+                                                        echo '</tr>';
+                                                    }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="more3">
+                                            <table class="table" >
+                                                <thead>
+                                                    <tr>
+                                                        <th style="border-bottom: 2px solid #000;">#</th>
+                                                        <th style="border-bottom: 2px solid #000;">Περιγραφή</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    for ($i = 60; $i <= 78; $i++) {  // Αρχικοί δείκτες για την καρτέλα 'more'
+                                                        echo '<tr>';
+                                                        echo '<th scope="row">' . ($i+1) . '</th>';
+                                                        if ($fileArray[$i][3] !== '... to be determined') {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank" style="color: dd6b4d;"><strong>' . htmlspecialchars($fileArray[$i][3]) . '</strong></a></td>';
+                                                        } else {
+                                                            echo '<td><a href="' . htmlspecialchars($fileArray[$i][4]) . '" target="_blank">' . htmlspecialchars($fileArray[$i][3]) . '</a></td>';
+                                                        }
+                                                        echo '</tr>';
+                                                    }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                         <div class="col-1">
                         </div>

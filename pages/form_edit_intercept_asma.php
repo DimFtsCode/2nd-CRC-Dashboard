@@ -57,7 +57,56 @@ $myRemark = $_SESSION[$myIndex3];
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style>
+        /* Style for the tooltip */
+            .tooltip-box {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                padding: 10px;
+                z-index: 1000;
+                width: 200px;
+            }
+            .tooltip-icon {
+                margin-left: 5px;
+                cursor: pointer;
+                color: #007bff;
+            }
+            
 
+        </style>
+        <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function showTooltip(element, message) {
+                    var tooltipBox = $('<div class="tooltip-box">' + message + '</div>');
+                    $('body').append(tooltipBox);
+                    tooltipBox.css({
+                        top: element.offset().top - tooltipBox.outerHeight() - 10,
+                        left: element.offset().left - tooltipBox.outerWidth() + element.outerWidth()
+                    });
+                    tooltipBox.show();
+                    element.data('tooltipBox', tooltipBox);
+                }
+
+                function hideTooltip(element) {
+                    var tooltipBox = element.data('tooltipBox');
+                    if (tooltipBox) {
+                        tooltipBox.remove();
+                        element.removeData('tooltipBox');
+                    }
+                }
+
+                $('.tooltip-icon').hover(function(event) {
+                    var message = '<img src="../images/1ake_entrance.jpg" alt="Οδηγίες" width="300" height="230">';
+                    showTooltip($(this), message);
+                }, function() {
+                    hideTooltip($(this));
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -569,20 +618,21 @@ $myRemark = $_SESSION[$myIndex3];
                                 </div>                                
 
                                 <div class="col-md-2 mb-3">
-                                    <label class="col-sm-2 control-label"> Είδος_ΑΝΧ#1 </label >
+                                    
+                                    <label class="control-label"> Είδος_ΑΝΧ#1 </label>
+                                    <i class="fa fa-question-circle tooltip-icon"></i>
                                     </br>
-                                    </br>
-                                    <select class="form-control"  id="intype"  name="intype" required>
+                                    <select class="form-control" id="intype" name="intype" required>
                                         <option value="" selected disabled> Είδος_ΑΝΧ </option>
                                         <?php
                                         require_once '../php_functions/db_config/db_connect.php';
                                         $db = new DbMgmt;
-                                        $sql = "SELECT  * FROM `intertype` ORDER BY `inter_id` ";
+                                        $sql = "SELECT * FROM `intertype` ORDER BY `inter_id` ";
                                         $res = $db->runQuery($sql);
                                         while ($row_res = mysqli_fetch_array($res)) {
                                             echo "<option value=\"" . $row_res['intertype'] . "\">" . $row_res['intertype'] . "</option>";
                                         }
-                                        ?>                                         
+                                        ?>
                                         echo "<option value="NULL">NULL</option>\n";
                                     </select>
                                 </div>     
@@ -604,23 +654,23 @@ $myRemark = $_SESSION[$myIndex3];
                                 </div>                                
 
                                 <div class="col-md-2 mb-3">
-                                    <label class="col-sm-2 control-label"> Είδος_ΑΝΧ#2 </label >
+                                    <label class="control-label"> Είδος_ΑΝΧ#2 </label>
+                                    <i class="fa fa-question-circle tooltip-icon"></i>
                                     </br>
-                                    </br>
-                                    <select class="form-control"  id="intype2"  name="intype2" >
+                                    <select class="form-control" id="intype2" name="intype2">
                                         <option value="" selected disabled> Είδος_ΑΝΧ </option>
                                         <?php
                                         require_once '../php_functions/db_config/db_connect.php';
                                         $db = new DbMgmt;
-                                        $sql = "SELECT  * FROM `intertype` ORDER BY `inter_id` ";
+                                        $sql = "SELECT * FROM `intertype` ORDER BY `inter_id` ";
                                         $res = $db->runQuery($sql);
                                         while ($row_res = mysqli_fetch_array($res)) {
                                             echo "<option value=\"" . $row_res['intertype'] . "\">" . $row_res['intertype'] . "</option>";
                                         }
-                                        ?>                                         
-                                        echo "<option value="NULL">NULL</option>\n";
+                                        ?>
+                                        <option value="NULL">NULL</option>
                                     </select>
-                                </div>  
+                                </div>   
 
                             </div>
                                 
@@ -822,6 +872,19 @@ $myRemark = $_SESSION[$myIndex3];
                                 </div>
                             </div>
                             
+                            </br>
+                            </br>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"> Debrief : </label>
+                                <div class="col-sm-4">                                    
+                                    <select class="form-control" id="debrief" name="debrief" required>
+                                        <option value="" selected disabled> Select Debrief Status </option>
+                                        <option class="text-primary" value="Αναμονή πληρωμάτων">Αναμονή πληρωμάτων</option>
+                                        <option class="text-primary" value="Μή εύρεση πληρωμάτων">Μή εύρεση πληρωμάτων</option>  
+                                        <option class="text-primary" value="Εκτελέστηκε">Εκτελέστηκε</option> 
+                                    </select>                                          
+                                </div>
+                            </div>
                             </br>
                             </br>
                             <div class="form-group">
